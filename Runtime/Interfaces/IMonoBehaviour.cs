@@ -16,10 +16,12 @@ namespace UnityEngine
         /// </summary>
         bool useGUILayout { get; set; }
 
+#if UNITY_EDITOR
         /// <summary>
         /// Allow a specific instance of a MonoBehaviour to run in edit mode (only available in the editor).
         /// </summary>
         bool runInEditMode { get; set; }
+#endif
 
         /// <summary>
         /// Logs message to the Unity Console (identical to Debug.Log).
